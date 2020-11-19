@@ -1,0 +1,52 @@
+
+.header{
+    width: auto;
+    height: auto;
+    /* background: url("latte.jpg") no-repeat left top; */
+}
+
+.home-view{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -8em;
+    z-index: -1;
+}
+.home-img{
+    width: 140%; /*?*/
+    height: 890px;
+    opacity: 0.7;
+    top:-100px;
+}
+
+.brief-intro{
+    width: 29%; /*?*/
+    height: 890px;
+    position: relative;
+    right: -20%;
+    background-color: #7D9174;
+}
+
+.nav{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em 0px;
+}
+
+.nav-list{
+    font-size: 20px; /**/
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type:none;
+    
+}
+
+li{
+    margin: 0;
+    padding: 0 0.5em;
+    border-right: 1px solid;
+    border-left: 1px solid;
+
+}
