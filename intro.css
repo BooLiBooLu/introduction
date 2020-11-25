@@ -3,27 +3,9 @@ html{
     font-family: 'Architects Daughter', monospace;
 }
 
-.header{
-    width: auto;
-    height: 850px;
-    /* background: url("latte.jpg") no-repeat left top; */
-}
-
-.home-view{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: -10em;
-    z-index: -1;
-}
-.home-img{
-    width: 150%; /*?*/
-    height: 850px;
-    opacity: 0.7;
-    top:-100px;
-}
 
 .home-greeting{
+    /* z-index: 7; */
     transition: all 0.5s;
     font-size: 60px;
     font-family: 'Caveat', monospace;
@@ -33,16 +15,99 @@ html{
     left: 100px;
     /* background-color: rgb(48, 43, 43);
     width: 500px;
-    opacity: 0.2;
-    z-index: -2; */
+    opacity: 0.2; */
 }
 
 /* .home-greeting:hover{
     opacity: 1;
 } */
 
+.header{
+    width: 100%;
+    height: 830px;
+    /* background: url("latte.jpg") no-repeat left top; */
+}
+
+.home-view{
+    width: 100%;
+    height: 830px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -9em;
+    z-index: -1;
+}
+.home-img{
+    width: 1440px; /*?*/
+    height: 830px;
+    opacity: 0.7;
+}
+
+/*slider-start*/
+
+.slide-container{
+    width: 1440px; 
+    height: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    /* text-align: center; */
+}
+@-webkit-keyframes slide-animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1440px;}
+    30% {left: 1440px;}
+    40% {left: 2880px;}
+    50% {left: 2880px;}
+    60% {left: 1440px;}
+    70% {left: 1440px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+.img-container{
+    width: 4320px; 
+    height: 830px;
+    position: relative;
+    margin: 0 0 0 -2880px;
+    -webkit-animation-name: slide-animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-direction: alternate; /*?*/
+    -webkit-animation-play-state: running;
+    /**/
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+
+}
+
+.slider-img{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}  
+
+
+/* .img-container{
+    width: 2880px; 
+    height: 830px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+*/
+
+
+/*slider-end*/
 
 .brief-intro-box{
+    width: 470px; /*?*/
+    height: 830px;
     background-color: #A8B5A3;
     display: flex;
     flex-direction: column;
@@ -50,12 +115,9 @@ html{
     font-size: 18px;
     align-items: center;
     text-align: center;
-    width: 25%; /*?*/
     box-sizing: border-box;
     padding: 4em 0em;
-    height: 850px;
     position: relative;
-    right: -24%;
 }
 
 .brief-intro{
@@ -163,6 +225,13 @@ a{
 
 .l-box{
     width: 55%;
+    font-size: 24px;
+    line-height: 2em;
+}
+
+.l-box h3{
+    margin-top: -4%;
+    margin-bottom: 5%;
 }
 
 .l-bg-light{
@@ -191,4 +260,86 @@ a{
     padding: 1%;
     color: lightcyan;
 }
+
+.half-col-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+/* .half-col{
+    margin: 0px 10px;
+} */
+
+.align-right{
+    padding-top: 20%;
+    padding-left: 26%;
+    text-align: right;
+    border-left: dotted 0.1px;
+}
+
+.bar{
+    margin-top: 4%;
+    padding: 8%;
+    width: 350px;
+    border-bottom: solid black ;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.skill-bar{
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+}
+
+.skill-bar li{
+    position: relative;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase; /*?*/
+}
+.skill-bar li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(207, 217, 204, 0.5);
+    border-radius: 1000px;
+}
+
+.skill-bar li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(207, 217, 204, 1);
+    border-radius: 1000px;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skill-bar li.nine:after{
+    animation-name: nine;
+}
+
+@keyframes nine{
+    to{
+        width: 90%;
+    }
+}
+
+
+
+#hr{
+    position: relative;
+    /* left: -45%; */
+    width: 2%;
+}
+
+
 
