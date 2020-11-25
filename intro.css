@@ -1,10 +1,11 @@
 html{
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'Architects Daughter', monospace;
 }
 
 .header{
     width: auto;
-    height: 800px;
+    height: 850px;
     /* background: url("latte.jpg") no-repeat left top; */
 }
 
@@ -12,12 +13,12 @@ html{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -8em;
+    top: -10em;
     z-index: -1;
 }
 .home-img{
     width: 150%; /*?*/
-    height: 777px;
+    height: 850px;
     opacity: 0.7;
     top:-100px;
 }
@@ -30,7 +31,16 @@ html{
     position: relative;
     top: -250px;
     left: 100px;
+    /* background-color: rgb(48, 43, 43);
+    width: 500px;
+    opacity: 0.2;
+    z-index: -2; */
 }
+
+/* .home-greeting:hover{
+    opacity: 1;
+} */
+
 
 .brief-intro-box{
     background-color: #A8B5A3;
@@ -43,9 +53,13 @@ html{
     width: 25%; /*?*/
     box-sizing: border-box;
     padding: 4em 0em;
-    height: 777px;
+    height: 850px;
     position: relative;
     right: -24%;
+}
+
+.brief-intro{
+    margin-top: -5%;
 }
 
 .brief-intro li{
@@ -82,10 +96,10 @@ li{
 /*?*/
 a{
     text-decoration: none;
-}
-a:visited{
     color: whitesmoke;
 }
+
+
 /*?*/
 
 /*nav list(start)*/
@@ -114,20 +128,21 @@ a:visited{
 	height: 100%;
 	z-index: -1;
 	opacity: 0;
-	background-color: rgba(207, 217, 204, 0.2);
+    background-color: rgba(207, 217, 204, 0.2);
 	transition: all 0.4s;
 	transform: scale(0.5, 1);
 }
 .nav-list li:hover::before{
 	opacity: 1;
 	-webkit-transform: scale(1, 1);
-	transform: scale(1, 1);
+    transform: scale(1, 1);
 }
 /*nav list(end)*/
 
 .brief-icon{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+
 }
 
 .brief-icon img{
@@ -160,12 +175,20 @@ a:visited{
 
 
 .anchor{
+    font-family: 'Dancing Script', monospace;
+    height: 800px;
+    top: 2%;
+    right: 1%;
     text-align: center;
     position: fixed;
-    bottom: 0%;
-    right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .anchor a{ 
-    color: black;
+    padding: 1%;
+    color: lightcyan;
 }
+
