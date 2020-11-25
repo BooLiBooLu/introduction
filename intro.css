@@ -278,11 +278,20 @@ a{
 }
 
 .half-col{
-    width: 300px;
-    height: 500px;
-    margin: 20px 20px;
     background-color: rgba(248, 226, 204, 0.8);
+    width: 300px;
+    height: 600px;
+    margin: 20px 20px;
     text-align: center;
+    line-height: 1em;
+}
+
+.half-col h2{
+    text-decoration: underline;
+}
+
+.half-col h3{
+    margin-top: 2px;
 }
 
 .align-right{
