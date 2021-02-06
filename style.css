@@ -21,17 +21,6 @@ html {
     left: 100px;
 }
 /* ================== <nav =================== */
-@media screen and (max-width: 450px) {
-    .height-666 {
-        height: auto !important;
-    }
-    .side-img {
-        display: none;
-    }
-    .skill-bar-container {
-        width: 100%;
-    }
-}
 .nav{
     position: absolute; /*position*/
     z-index: 1;
@@ -421,4 +410,19 @@ h2, h3 {
 
 .text-center {
     text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .height-666 {
+        height: auto !important;
+    }
+    .side-img {
+        display: none;
+    }
+    .skill-bar-container {
+        width: 100%;
+    }
+    .nav {
+        
+    }
 }
