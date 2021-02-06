@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AshleyChu</title>
-    <link rel="stylesheet" type="text/css" href="intro.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Caveat:wght@700&display=swap" rel="stylesheet">
     <!--?-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet"></head>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"><body>
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+</head>
+<body>
     <header class="header">
-
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#h">Home</a></li>
-                <li><a href="#a">About</a></li>
-                <li><a href="#ee">Education & Experience</a></li>
-                <li><a href="#sl">Skill & Language</a></li>
-                <li><a href="#i">Interests</a></li>
-                <li><a href="#c">Contact</a></li>
-            </ul>
-        </nav>
-        
         <div id="h" class="home-view">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#h">Home</a></li>
+                    <li><a href="#a">About</a></li>
+                    <li><a href="#ee">Education & Experience</a></li>
+                    <li><a href="#sl">Skill & Language</a></li>
+                    <li><a href="#i">Interests</a></li>
+                    <li><a href="#c">Contact</a></li>
+                </ul>
+            </nav>
             <div class="slide-container"> 
                 <div class="img-container">
                     <img class="home-img slider-img" src="img/book.jpg">
@@ -41,7 +42,7 @@
                 <p class="home-greeting">HELLO,<br> &emsp; A little about me. </p>
             </div>
 
-            <div class="brief-intro-box">
+            <div class="info-container">
                 <div>
                     <img class="profile-img" src="img/flying-pig.jpg" alt="flying-pig">
                     <h1>Ashley&thinsp;Chu</h1>
@@ -67,7 +68,7 @@
     </header>
 
     <main>
-        <div>
+        <!-- <div>
             <ul class="anchor">
                 <li><a href="#h">Home</a></li>
                 <li><a href="#a">About</a></li>
@@ -76,64 +77,224 @@
                 <li><a href="#i">Interests</a></li>
                 <li><a href="#c">Contact</a></li>
             </ul>
-        </div>
+        </div> -->
 
 
         <!--About-->
         <div id="a" class="l-bg">
-            <div class="l-box">
-                <h2>About</h2>
-                    <h3>My Background</h3>
-                    <p>With a passion for business, social media, and all things marketing, I have both the skill set and professional background necessary to dive deep into the marketing world. As an upbeat, self-motivated team player with excellent communication, I envision an exciting future in the industry. Browse my site to see all that I have to offer.</p>
-        
+            <h2>About me</h2>
+            <div class="card-container">
+                <div class="card-item text-center">
+                    <h3>上進</h3>
+                    <p>空閒時，會想著如何利用時間學習</p>
+                </div>
+                <div class="card-item text-center">
+                    <h3>自律</h3>
+                    <p>想學的種類很多，會自行上網蒐尋資源</p>
+                </div>
+                <div class="card-item text-center">
+                    <h3>負責</h3>
+                    <p>派在身上的任務，會盡力並盡速完成</p>
+                </div>
+                <div class="card-item text-center">
+                    <h3>熱心</h3>
+                    <p>若手邊工作不緊急，會很願意提供幫助</p>
+                </div>
+                <div class="card-item text-center">
+                    <h3>慢熟</h3>
+                    <p>擔心打擾到不熟識的人，會先詢問是否有空</p>
+                </div>
             </div>
+            <p>本身為資管系，在學即將滿四年，發現對於前端有極大的興趣，由於學校無開設相關課程，因此開始自學，過程覺得有趣，也有成就感。</p>
+            <p>不過目前在自學框架(React)方面有點找不到方向，因此花了大量時間在網路上尋求資源，若有人可帶領、提供方向，必能精進、有一大突破。</p>
+            <p>非常認同程式實作外，能夠加強表達能力，更能拓展人脈，不過自身程式實作較薄弱，極需要到外面的世界增廣見聞，拓增經驗。</p>
         </div>
 
         <!--Education & Experience-->
         <div id="ee" class="l-bg l-bg-light">
-            <div class="l-box half-col-box">
-                <div class="half-col">
+            <div class="img-bg">
+                <div class="half-col height-666">
                     <h2>Education</h2>
-                    <h3>NTVS</h3>
-                    <p>AFL<br>（Graduated in the first place）</p>
-                    <h3>NTUST</h3>
-                    <p>MIS<br>（Major）</p>
-                    <p>AFL<br>（minor）</p>
-                    <p>FI<br>（minor）</p>
-                    <h3>Training</h3>
-                    <p>Full-Stack（1 month）</p>
+                    <h3>NTVS－AFL</h3>
+                    <p>Graduated in the first place</p>
+                    <h3>NTUST－MIS (Major)</h3>
+                    <p>System Analysis & Design</p>
+                    <p>Database Management</p>
+                    <p>Data Structures</p>
+                    <h3>NTUST－AFL (minor)</h3>
+                    <p>Public Speaking</p>
+                    <p>English Writing</p>
+                    <p>Business English</p>
+                    <p>Linguistics</p>
+                    <h3>NTUST－FI (minor)</h3>
+                    <p>Economics</p>
+                    <p>Accounting</p>
+                    <p>Fund Management</p>
+                    <p>Financial Planning Practice</p>
                 </div>
-
                 <div class="half-col align-right">
-                    <h2>Experience</h2>
-                    <h3>Tutor</h3>
-                    <p>English</p>
-                    <p>Japanese</p>
-                    <h3>Summer Camp</h3>
-                    <p>Python</p>
-                    <h3>Cadre</h3>
-                    <p>Class & Club Leader</p>
-                    <p>Master of Ceremonies</p>
-                    <p>Secretary in Student Association</p>
-                    <p>PR in Activities</p>
+                    <h2>Interests</h2>
+                    <h3>Reading</h3>
+                    <p>Front-end</p>
+                    <p>Finance</p>
+                    <p>Emotion</p>
+                    <h3>Exercise</h3>
+                    <p>TABATA</p>
+                    <p>Switch</p>
+                    <h3>Photography</h3>
+                    <p>Landscape</p>
+                    <h3>Music</h3>
+                    <p>Taiwan: Band</p>
+                    <p>Korean: K-POP</p>
+                    <p>English: Top songs</p>
                 </div>
             </div>
         </div>
 
+        <div id="ee" class="card-container l-bg l-bg-light">
+            <div class="card-item height-666">
+                <h2>Job Experience</h2>
+                <ul>
+                    <li>Catering Industry</li>
+                    <ul>
+                        <li>Server (2 months)</li>
+                    </ul>
+                    <li>Academic Field</li>
+                    <ul>
+                        <li>Assistant Research Fellow</li>
+                        <ol>
+                            <li>訪問對於臺灣教育的想法</li>
+                            <li>撰寫分析報告</li>
+                            <li>中英翻譯國外相關文件</li>
+                        </ol>
+                    </ul>
+                    <li>Tutor</li>
+                        <ul>
+                            <li>統測英文(考前1個月衝刺)</li>
+                            <li>國小伴讀(2019/07-2020/09)</li>
+                            <li>Basic Japanese</li>
+                            <li>English Grammar</li>
+                            <li>English Writing</li>
+                            <li>Information Consultant</li>
+                            <li>Webpages Development Consultant</li>
+                        </ul>
+                    <li>Summer camp</li>
+                        <ul>
+                            <li>Administrative staff</li>
+                            <ol>
+                                <li>Class Management</li>
+                                <li>Financial Management</li>
+                            </ol>
+                            <li>Teacher/Lecturer</li>
+                            <ol>
+                                <li>Python</li>
+                            </ol>
+                            <li>Teaching assistant</li>
+                        </ul>
+                    <li>Graduate Institute of Finance</li>
+                        <ul>
+                            <li>Part-time worker </li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="card-item height-666">
+                <h2>Internship</h2>
+                <ul>
+                    <li>Full-stack training</li>
+                    <ul>
+                        <li>Database</li>
+                        <li>MVC</li>
+                    </ul>
+                    <li>Front-end</li>
+                    <ul>
+                        <li>basic HTML/CSS</li>
+                        <li>blog article</li>
+                        <li>SEO</li>
+                        <li>English/Japanese/Korean</li>
+                    </ul>
+                </ul>
+                <h2>Competition</h2>
+                <ul>
+                    <li>專題</li>
+                    <li>English</li>
+                    <ul>
+                        <li>說故事</li>
+                        <li>電子書</li>
+                        <li>單字</li>
+                        <li>朗讀</li>
+                    </ul>
+                    <li>ICG主持人徵選（新北市政府主辦）</li>
+                    <li>體育</li>
+                    <ul>
+                        <li>跳遠</li>
+                        <li>接力</li>
+                        <li>籃球</li>
+                        <li>排球</li>
+                    </ul>
+                    <li>唱歌</li>
+                </ul>
+            </div>
+            <div class="card-item height-666">
+                <h2>School</h2>
+                <ul>
+                    <li>Class Leader（各科老師之小助手）</li>
+                    <ol>
+                        <li>校內外資訊整理&公布</li>
+                        <li>主持每週班會</li>
+                        <li>推動班際活動</li>
+                    </ol>
+                    <li>Club Leader（使社團起死回生）</li>
+                    <ol>
+                        <li>與指導老師討論改變教學風格</li>
+                        <li>舉辦課後活動，增加社員凝聚力</li>
+                        <li>積極向校方爭取各項資源</li>
+                        <li>建立粉絲專業，跑班宣傳招生</li>
+                        <li>實施幹部訓練，完美交棒予學弟妹</li>
+                    </ol>
+                    <li>司儀（重振司儀風氣）</li>
+                    <ol>
+                        <li>各項活動唱名&遞獎</li>
+                        <ul>
+                            <li>每週朝會</li>
+                            <li>運動會</li>
+                            <li>畢業典禮</li>
+                        </ul>
+                        <li>表現亮眼，積極招生</li>
+                    </ol>
+                    <li>Team Leader</li>
+                    <ol>
+                        <li>自願擔任組長</li>                  
+                        <li>立即詢問組員的想法與偏好</li>
+                        <li>根據興趣與專長來分配工作</li>
+                    </ol>
+                    <li>總召</li>
+                    <li>Host</li>
+                    <li>公關</li>
+                    <li>隊輔</li>
+                    <li>系學會秘書</li>
+                </ul>
+            </div>
+        </div>
+        
         <!--Skill & Language-->
         <div id="sl" class="l-bg">
-            <div class="l-box flex">
-                <div>
+            <div class="with-img-container">
+                <div class="skill-bar-container">
                     <h2>Skill & Language</h2>
                     <ul class="skill-bar">
-                          <li class="nine">HTML & CSS</li>
-                          <li class="seven">JavaScript</li>
-                          <li class="seven">JAVA</li>
-                         <li class="seven">Python</li>
+                        <li class="nine">HTML & CSS</li>
+                        <li class="seven">JavaScript</li>
+                        <li class="seven">JAVA</li>
+                        <li class="seven">Python</li>
+                        <li class="seven">markdown</li>
+                        <li class="seven">SEO</li>
+                        <li class="seven">Presentation</li>
+                        <li class="seven">SVG</li>
+                        <li class="seven">Git</li>
+                        <li class="seven">表達能力</li>
+                        <li class="seven">周慮思考</li>
                     </ul>
-    
                     <hr id="hr">
-    
                     <ul class="skill-bar">
                         <li class="ten">Chinese</li>
                         <li class="ten">Taiwanese</li>
@@ -142,16 +303,14 @@
                         <li class="three">Korean</li>
                     </ul>
                 </div>
-                
-                <div class="sl-img">
-                    <!-- <video id="bg-video" autoplay muted loop>
-                        <source src="img/coding.mp4" type="video/mp4">
-                     </video> -->
-                </div>
+                <div class="side-img-container">
+                    <div class="side-img">
+                    </div>
+                </div> 
             </div>
         </div>        
-
-        <!--Interest-->
+<!-- 
+        
         <div id="i" class="l-bg l-bg-light">
             <div class="l-box">
                 <h2>Interests</h2>
@@ -170,23 +329,17 @@
                         <video id="video" src="img/coding.mp4" autoplay muted loop></video>
                     </div>
                 </div>
-           
             </div>
-        </div>        
+        </div> -->
+    </main>
 
+    <footer>
         <!--Contact, footer?-->
         <div id="c" class="l-bg">
             <div class="l-box">
                 <h2>Contact</h2>
-                    <h3>My Background</h3>
-                    <p>With a passion for business, social media, and all things marketing, I have both the skill set and professional background necessary to dive deep into the marketing world. As an upbeat, self-motivated team player with excellent communication, I envision an exciting future in the industry. Browse my site to see all that I have to offer.</p>
             </div>
         </div>
-
-    </main>
-
-    <footer>
-
     </footer>
 </body>
 </html>
