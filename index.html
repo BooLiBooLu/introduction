@@ -12,20 +12,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="navbar-top.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+
 </head>
 <body>
+
     <header class="header">
-        <div id="h" class="home-view">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#h">Home</a></li>
-                    <li><a href="#a">About</a></li>
-                    <li><a href="#ee">Education & Experience</a></li>
-                    <li><a href="#sl">Skill & Language</a></li>
-                    <li><a href="#i">Interests</a></li>
-                    <li><a href="#c">Contact</a></li>
+        <nav class="nav navbar navbar-expand-md navbar-light mb-4">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav-list navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education&interest">Education & Interest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skill&language">Skill & Language</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#studyprogress">Study Progress</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
                 </ul>
-            </nav>
+            </div>
+            </div>
+        </nav> 
+        <div id="home" class="home-view">
             <div class="slide-container"> 
                 <div class="img-container">
                     <img class="home-img slider-img" src="img/book.jpg">
@@ -68,20 +96,20 @@
     </header>
 
     <main>
-        <!-- <div>
+        <div>
             <ul class="anchor">
-                <li><a href="#h">Home</a></li>
-                <li><a href="#a">About</a></li>
-                <li><a href="#ee">Education<br> & <br>Experience</a></li>
-                <li><a href="#sl">Skill<br> & <br>Language</a></li>
-                <li><a href="#i">Interests</a></li>
-                <li><a href="#c">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education&interest">Education<br> & <br>Interest</a></li>
+                <li><a href="#skill&language">Skill<br> & <br>Language</a></li>
+                <li><a href="#studyprogress">Study Progress</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div> -->
+        </div>
 
 
         <!--About-->
-        <div id="a" class="l-bg">
+        <div id="about" class="l-bg">
             <h2>About me</h2>
             <div class="card-container">
                 <div class="card-item text-center">
@@ -110,8 +138,8 @@
             <p>非常認同程式實作外，能夠加強表達能力，更能拓展人脈，不過自身程式實作較薄弱，極需要到外面的世界增廣見聞，拓增經驗。</p>
         </div>
 
-        <!--Education & Experience-->
-        <div id="ee" class="l-bg l-bg-light">
+        <!--Education & Interest-->
+        <div id="education&interest" class="l-bg l-bg-light">
             <div class="img-bg">
                 <div class="half-col height-666">
                     <h2>Education</h2>
@@ -151,7 +179,7 @@
             </div>
         </div>
 
-        <div id="ee" class="card-container l-bg l-bg-light">
+        <div id="experience" class="card-container l-bg l-bg-light">
             <div class="card-item height-666">
                 <h2>Job Experience</h2>
                 <ul>
@@ -277,7 +305,7 @@
         </div>
         
         <!--Skill & Language-->
-        <div id="sl" class="l-bg">
+        <div id="skill&language" class="l-bg">
             <div class="with-img-container">
                 <div class="skill-bar-container">
                     <h2>Skill & Language</h2>
@@ -335,11 +363,13 @@
 
     <footer>
         <!--Contact, footer?-->
-        <div id="c" class="l-bg">
+        <div id="contact" class="l-bg">
             <div class="l-box">
                 <h2>Contact</h2>
             </div>
         </div>
     </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

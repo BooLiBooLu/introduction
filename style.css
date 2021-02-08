@@ -1,8 +1,12 @@
 /*================== large range ===================*/
+:root {
+    --bs-font-sans-serif: 'Architects Daughter', monospace !important;
+}
 html {
-    /* font-family: monospace; */
-    font-family: 'Architects Daughter', monospace;
     box-sizing: border-box;
+}
+body {
+    margin: 0;
 }
 
 /*================== home ===================*/
@@ -21,18 +25,22 @@ html {
     left: 100px;
 }
 /* ================== <nav =================== */
-.nav{
-    position: absolute; /*position*/
+nav {
+    position: absolute !important;
     z-index: 1;
-    width: 60%;
+    width: 85%;
 }
-.nav-list {
+
+/* .navbar-collapse .collapse{
+    justify-content: center !important;
+}
+.nav-list .navbar-nav .me-auto .mb-2 .mb-md-0 {
+    margin: 0px !important;
+} */
+.navbar-light .navbar-nav .nav-link {
     font-size: 1.5rem; 
     font-family: 'Big Shoulders Stencil Display',monospace;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    color: whitesmoke !important;
 }
 .nav-list li {
     position: relative; 
@@ -208,17 +216,16 @@ h2, h3 {
     font-family: 'Dancing Script', monospace;
     height: 800px;
     top: 2%;
-    right: 1%;
+    right: 0;
     text-align: center;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 .anchor a{ 
     padding: 1%;
-    color: lightcyan;
+    color:darkcyan;
 }
 /* ================== anchor> =================== */
 
@@ -413,6 +420,15 @@ h2, h3 {
 }
 
 @media screen and (max-width: 450px) {
+    .slide-container {
+        display: none;
+    }
+    .anchor {
+        display: none;
+    }
+    .info-container {
+        height: 100vh;
+    }
     .height-666 {
         height: auto !important;
     }
@@ -422,7 +438,14 @@ h2, h3 {
     .skill-bar-container {
         width: 100%;
     }
-    .nav {
-        
+    .navbar-collapse {
+        background-color:rgb(95, 160, 160, 0.9)
     }
 }
+
+
+
+
+/* body{
+    background-color: cadetblue;
+} */
