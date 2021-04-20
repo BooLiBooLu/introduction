@@ -8,12 +8,10 @@ html {
 body {
     margin: 0;
 }
-
 /*================== home ===================*/
 .header {
     width: 100%;
     height: auto;
-    /* background: url("latte.jpg") no-repeat left top; */
 }
 .home-greeting {
     transition: all 0.5s;
@@ -25,18 +23,10 @@ body {
     left: 100px;
 }
 /* ================== <nav =================== */
-nav {
+.navbar {
     position: absolute !important;
     z-index: 1;
-    width: 85%;
 }
-
-/* .navbar-collapse .collapse{
-    justify-content: center !important;
-}
-.nav-list .navbar-nav .me-auto .mb-2 .mb-md-0 {
-    margin: 0px !important;
-} */
 .navbar-light .navbar-nav .nav-link {
     font-size: 1.5rem; 
     font-family: 'Big Shoulders Stencil Display',monospace;
@@ -50,7 +40,7 @@ nav {
 	transition: all 0.5s;
     opacity: 0.9;
 }
-.nav-list li span { /*span*/
+.nav-list li span {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -75,13 +65,12 @@ nav {
     transform: scale(1, 1);
 }
 /* ================== nav> =================== */
-.home-view{
+.home-container{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 0;
 }
 .home-img{
     width: 1440px; 
@@ -116,7 +105,7 @@ nav {
     margin: 0 0 0 -2880px;
     -webkit-animation-name: slide-animation;
     -webkit-animation-duration: 33s;
-    -webkit-animation-direction: alternate; /*?*/
+    -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
@@ -127,20 +116,10 @@ nav {
     margin: 0px;
     padding: 0px;
 }  
-/* .img-container{
-    width: 2880px; 
-    height: 830px;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-}*/
 /* ================== slider> =================== */
-
 /* ================== <brief-intro =================== */
 .info-container{
-    width: 450px; /*##############################################*/
+    width: 460px; /*##############################################*/
     height: auto;
     background-color: #A8B5A3;
     display: flex;
@@ -149,8 +128,6 @@ nav {
     font-size: 1.5rem;
     align-items: center;
     text-align: center;
-    /* padding: 4em 0em; */
-    /* position: relative; */
 }
 /*#################<#############################*/
 .brief-intro{
@@ -174,19 +151,14 @@ nav {
     padding: 0em 1em;
 }
 /* ================== brief-intro =================== */
-
 li{
     margin: 0;
     list-style-type:none;
 }
-
 a{
     text-decoration: none;
     color: whitesmoke;
 }
-
-
-
 
 /*box*/
 .l-bg{
@@ -198,19 +170,15 @@ a{
     flex-direction: column;
     align-items: center;
 }
-
 h2, h3 {
     text-transform: uppercase;
 } 
-
 .l-bg-light{
     background-color: #DBD3C8;
 }
-
 /* .l-bg-warm{
     background-color: #A8B5A3;
 } */
-
 /* ================== <anchor =================== */
 .anchor{
     font-family: 'Dancing Script', monospace;
@@ -305,6 +273,9 @@ h2, h3 {
 .skill-bar li.nine:after{
     animation-name: nine;
 }
+.skill-bar li.seven:after{
+    animation-name: seven;
+}
 .skill-bar li.four:after{
     animation-name: four;
 }
@@ -319,6 +290,11 @@ h2, h3 {
 @keyframes nine{
     to{
         width: 90%;
+    }
+}
+@keyframes seven{
+    to{
+        width: 70%;
     }
 }
 @keyframes four{
@@ -384,23 +360,29 @@ h2, h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center; 
     height: auto;
 }
 .card-item {
     flex: 0 1 350px;
-    margin: 5px 15px;
+    margin: 10px 15px;
     padding: 10px;
     background-color: beige;
     height: auto;
 }
-
+.card-item p {
+    margin: 0;
+}
+.goal-text {
+    text-align: center;
+    margin: 10px;
+}
 /*================== About me> ===================*/
+
 
 .card-item ul li {
     list-style: disc;
 }
-
 .card-item ol li {
     list-style: decimal;
 }

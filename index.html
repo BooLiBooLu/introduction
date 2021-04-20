@@ -7,69 +7,59 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Caveat:wght@700&display=swap" rel="stylesheet">
-    <!--?-->
+    <!--TODO: clean up the font-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="navbar-top.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
-
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"></head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header class="header">
-        <nav class="nav navbar navbar-expand-md navbar-light mb-4">
+        <!--TODO: fix-top navbar-->
+        <nav class="navbar navbar-expand-md navbar-light mb-4">
             <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav-list navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item active">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education&interest">Education & Interest</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skill&language">Skill & Language</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#studyprogress">Study Progress</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                </ul>
-            </div>
+            <!--TODO: return-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav-list navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education&interest">Education & Interest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill&language">Skill & Language</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#studyprogress">Study Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav> 
-        <div id="home" class="home-view">
+        <div id="home" class="home-container">
             <div class="slide-container"> 
                 <div class="img-container">
                     <img class="home-img slider-img" src="img/book.jpg">
                     <img class="home-img slider-img" src="img/road.jpg">
                     <img class="home-img slider-img" src="img/latte.jpg"> 
                 </div>
-                <!-- <div class="btn-container">
-                    <a href="#slide-img-1" class="slide-btn"></a>
-                    <a href="#slide-img-2" class="slide-btn"></a>
-                    <a href="#slide-img-3" class="slide-btn"></a>
-                    <a href="#slide-img-4" class="slide-btn"></a>
-                    <a href="#slide-img-5" class="slide-btn"></a>
-                </div> -->
                 <p class="home-greeting">HELLO,<br> &emsp; A little about me. </p>
             </div>
-
             <div class="info-container">
                 <div>
                     <img class="profile-img" src="img/flying-pig.jpg" alt="flying-pig">
@@ -94,7 +84,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <div>
             <ul class="anchor">
@@ -106,19 +95,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-
-
         <!--About-->
         <div id="about" class="l-bg">
             <h2>About me</h2>
-            <div class="card-container">
+            <div class="container card-container">
                 <div class="card-item text-center">
                     <h3>上進</h3>
                     <p>空閒時，會想著如何利用時間學習</p>
                 </div>
                 <div class="card-item text-center">
                     <h3>自律</h3>
-                    <p>想學的種類很多，會自行上網蒐尋資源</p>
+                    <p>想學的任何領域，會自行上網蒐尋資源</p>
                 </div>
                 <div class="card-item text-center">
                     <h3>負責</h3>
@@ -128,16 +115,17 @@
                     <h3>熱心</h3>
                     <p>若手邊工作不緊急，會很願意提供幫助</p>
                 </div>
-                <div class="card-item text-center">
-                    <h3>慢熟</h3>
-                    <p>擔心打擾到不熟識的人，會先詢問是否有空</p>
-                </div>
             </div>
-            <p>本身為資管系，在學即將滿四年，發現對於前端有極大的興趣，由於學校無開設相關課程，因此開始自學，過程覺得有趣，也有成就感。</p>
-            <p>不過目前在自學框架(React)方面有點找不到方向，因此花了大量時間在網路上尋求資源，若有人可帶領、提供方向，必能精進、有一大突破。</p>
-            <p>非常認同程式實作外，能夠加強表達能力，更能拓展人脈，不過自身程式實作較薄弱，極需要到外面的世界增廣見聞，拓增經驗。</p>
+            <div class="goal-text">
+                <p>身為資管系的我，在大三那年發覺了前端所潛藏的巨大魅力</p>
+                <p>驚覺學校無開設相關課程，因而開始自學，過程中覺得新鮮、有趣，也有成就感</p>
+                <p>自學中透過閱讀大量文件，訓練尋找解決方法的能力</p>
+                <p>從基本HTML/CSS到JS框架(React)的學習過程中，處處感到驚奇，也被深深吸引</p>
+                <p>對於學習新技術充滿興趣，也樂於與他人溝通討論</p>
+                <p>也替自己訂定了明確的目標：成為一名「網頁前端工程師」</p>
+                <p>且希望有機會能夠結合我的「外文能力」以及「教學經驗」達到更高的層次</p>
+            </div>
         </div>
-
         <!--Education & Interest-->
         <div id="education&interest" class="l-bg l-bg-light">
             <div class="img-bg">
@@ -146,18 +134,16 @@
                     <h3>NTVS－AFL</h3>
                     <p>Graduated in the first place</p>
                     <h3>NTUST－MIS (Major)</h3>
+                    <p>JAVA, Python</p>
                     <p>System Analysis & Design</p>
                     <p>Database Management</p>
                     <p>Data Structures</p>
                     <h3>NTUST－AFL (minor)</h3>
                     <p>Public Speaking</p>
-                    <p>English Writing</p>
                     <p>Business English</p>
-                    <p>Linguistics</p>
                     <h3>NTUST－FI (minor)</h3>
                     <p>Economics</p>
                     <p>Accounting</p>
-                    <p>Fund Management</p>
                     <p>Financial Planning Practice</p>
                 </div>
                 <div class="half-col align-right">
@@ -165,7 +151,7 @@
                     <h3>Reading</h3>
                     <p>Front-end</p>
                     <p>Finance</p>
-                    <p>Emotion</p>
+                    <p>Self-help</p>
                     <h3>Exercise</h3>
                     <p>TABATA</p>
                     <p>Switch</p>
@@ -178,33 +164,28 @@
                 </div>
             </div>
         </div>
-
         <div id="experience" class="card-container l-bg l-bg-light">
-            <div class="card-item height-666">
+            <div class="card-item">
                 <h2>Job Experience</h2>
                 <ul>
                     <li>Catering Industry</li>
                     <ul>
                         <li>Server (2 months)</li>
                     </ul>
-                    <li>Academic Field</li>
-                    <ul>
-                        <li>Assistant Research Fellow</li>
+                    <li>Assistant Research Fellow</li>
                         <ol>
-                            <li>訪問對於臺灣教育的想法</li>
-                            <li>撰寫分析報告</li>
-                            <li>中英翻譯國外相關文件</li>
+                            <li>Interview the reviews of education</li>
+                            <li>Write analytical reports</li>
+                            <li>English-Chinese Translation</li>
                         </ol>
-                    </ul>
                     <li>Tutor</li>
                         <ul>
-                            <li>統測英文(考前1個月衝刺)</li>
-                            <li>國小伴讀(2019/07-2020/09)</li>
+                            <li style="color: red;">Information consultant</li>
+                            <li style="color: red;">Webpages development consultant</li>
+                            <li>English grammar</li>
+                            <li>English writing</li>
                             <li>Basic Japanese</li>
-                            <li>English Grammar</li>
-                            <li>English Writing</li>
-                            <li>Information Consultant</li>
-                            <li>Webpages Development Consultant</li>
+                            <li>Reading partner</li>
                         </ul>
                     <li>Summer camp</li>
                         <ul>
@@ -215,7 +196,8 @@
                             </ol>
                             <li>Teacher/Lecturer</li>
                             <ol>
-                                <li>Python</li>
+                                <li style="color: red;">Python</li>
+                                <li>Scratch</li>
                             </ol>
                             <li>Teaching assistant</li>
                         </ul>
@@ -225,53 +207,51 @@
                         </ul>
                 </ul>
             </div>
-            <div class="card-item height-666">
+            <div class="card-item">
                 <h2>Internship</h2>
                 <ul>
-                    <li>Full-stack training</li>
+                    <li>Full-stack</li>
                     <ul>
                         <li>Database</li>
                         <li>MVC</li>
                     </ul>
-                    <li>Front-end</li>
+                    <li style="color: red;">Front-end</li>
                     <ul>
-                        <li>basic HTML/CSS</li>
-                        <li>blog article</li>
+                        <li>HTML5 & CSS Framework</li>
+                        <li>ReactJS、Redux</li>
+                        <li>API</li>
+                        <li>RWD </li>
+                        <li>UI, UX</li>
                         <li>SEO</li>
-                        <li>English/Japanese/Korean</li>
+                        <li>Git</li>
                     </ul>
                 </ul>
                 <h2>Competition</h2>
                 <ul>
-                    <li>專題</li>
+                    <li>Special Topic(Top3)</li>
                     <li>English</li>
                     <ul>
-                        <li>說故事</li>
-                        <li>電子書</li>
-                        <li>單字</li>
-                        <li>朗讀</li>
+                        <li>Storytelling</li>
+                        <li>Read aloud</li>
                     </ul>
-                    <li>ICG主持人徵選（新北市政府主辦）</li>
-                    <li>體育</li>
+                    <li>ICG host audition (held by New Taipei city)</li>
+                    <li>PE.</li>
                     <ul>
-                        <li>跳遠</li>
-                        <li>接力</li>
-                        <li>籃球</li>
-                        <li>排球</li>
+                        <li>Volleyball、Basketball</li>
+                        <li>Relay race、Long jump</li>
                     </ul>
-                    <li>唱歌</li>
                 </ul>
             </div>
-            <div class="card-item height-666">
+            <div class="card-item">
                 <h2>School</h2>
                 <ul>
-                    <li>Class Leader（各科老師之小助手）</li>
+                    <li>班長（各科老師之小助手）</li>
                     <ol>
                         <li>校內外資訊整理&公布</li>
                         <li>主持每週班會</li>
                         <li>推動班際活動</li>
                     </ol>
-                    <li>Club Leader（使社團起死回生）</li>
+                    <li>社長（使社團起死回生）</li>
                     <ol>
                         <li>與指導老師討論改變教學風格</li>
                         <li>舉辦課後活動，增加社員凝聚力</li>
@@ -282,21 +262,16 @@
                     <li>司儀（重振司儀風氣）</li>
                     <ol>
                         <li>各項活動唱名&遞獎</li>
-                        <ul>
-                            <li>每週朝會</li>
-                            <li>運動會</li>
-                            <li>畢業典禮</li>
-                        </ul>
                         <li>表現亮眼，積極招生</li>
                     </ol>
-                    <li>Team Leader</li>
+                    <li>組長</li>
                     <ol>
                         <li>自願擔任組長</li>                  
                         <li>立即詢問組員的想法與偏好</li>
                         <li>根據興趣與專長來分配工作</li>
                     </ol>
                     <li>總召</li>
-                    <li>Host</li>
+                    <li>主持人</li>
                     <li>公關</li>
                     <li>隊輔</li>
                     <li>系學會秘書</li>
@@ -311,16 +286,12 @@
                     <h2>Skill & Language</h2>
                     <ul class="skill-bar">
                         <li class="nine">HTML & CSS</li>
+                        <li class="nine">markdown</li>
+                        <li class="nine">Presentation</li>
                         <li class="seven">JavaScript</li>
                         <li class="seven">JAVA</li>
                         <li class="seven">Python</li>
-                        <li class="seven">markdown</li>
                         <li class="seven">SEO</li>
-                        <li class="seven">Presentation</li>
-                        <li class="seven">SVG</li>
-                        <li class="seven">Git</li>
-                        <li class="seven">表達能力</li>
-                        <li class="seven">周慮思考</li>
                     </ul>
                     <hr id="hr">
                     <ul class="skill-bar">
@@ -336,37 +307,89 @@
                     </div>
                 </div> 
             </div>
-        </div>        
-<!-- 
-        
-        <div id="i" class="l-bg l-bg-light">
-            <div class="l-box">
-                <h2>Interests</h2>
-                <h3>Lift my spirits </h3>
-                <div class="interest-box ">
-                    <div class="interest">
-                        <video id="video" src="img/piano.mp4" autoplay muted loop></video>
-                    </div>
-                    <div class="interest">
-                        <video id="video" src="img/switch.mp4" autoplay muted loop></video>
-                    </div>
-                    <div class="interest">
-                        <video id="video" src="img/exercise.mp4" autoplay muted loop></video>
-                    </div>
-                    <div class="interest">
-                        <video id="video" src="img/coding.mp4" autoplay muted loop></video>
-                    </div>
+        </div>    
+        <div id="" class="l-bg l-bg-light">
+            <h2>Study Progress</h2>
+            <div class="l-bg l-bg-light card-container">
+                <div class="card-item">
+                    <h2>HTML5 & CSS3</h2>
+                    <ul>
+                        <li>使用HTML5語意標籤</li>
+                        <li>瞭解使用各大CSS Framework</li>
+                        <li>熟悉RWD響應式網頁設計</li>
+                        <li>熟悉Flex、Grid</li>
+                    </ul>
                 </div>
+                <div class="card-item">
+                    <h2>JavaScript</h2>
+                    <ul>
+                        <li>使用Vanilla JS操作DOM</li>
+                        <li>使用ES6+語法操作Fetch API</li>
+                        <li>React基本操作(prop, state, hook)</li>
+                        <li>Redux基本操作(Action, Reducer, Store) </li>
+                    </ul>
+
+                </div>
+                <div class="card-item">
+                    <h2>Others</h2>
+                    <ul>
+                        <li>使用Visial Studio Code開發</li>
+                        <li>瞭解Git/GitHub版本控制流程</li>
+                        <li>瞭解SVN版本控制流程</li>
+                        <li>具備基本的設計觀念與美感要求</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="" class="l-bg">
+            <div class="container card-container">
+                <h2>Protfolio</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Draw Something</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Special Topic</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CoolCook</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">SA</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
             </div>
         </div> -->
     </main>
 
-    <footer>
-        <!--Contact, footer?-->
-        <div id="contact" class="l-bg">
-            <div class="l-box">
-                <h2>Contact</h2>
-            </div>
+    <footer class="l-bg">
+        <div class="container">
+            <p style="text-align: center;">© by Ashley Chu</p>
         </div>
     </footer>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
